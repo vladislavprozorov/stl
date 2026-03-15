@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание WebGL/SVG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">HTML</h2>
+        
+        <div class="panels">
+          
+            <div class="panel webgl-panel">
+                <h3>поле WebGL</h3>
+                <canvas id="webgl-canvas" width="400" height="250"></canvas>
+                <div class="labels">
+                    <span>3D объект 1</span>
+                    <span>3D объект 2</span>
+                </div>
+            </div>
+            
+            
+            <div class="panel svg-panel">
+                <svg id="svg-object" viewBox="0 0 100 100" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#58ed53" />
+                </svg>
+                <div class="labels">
+                    <span>2d объект .svg</span>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="button-container">
+            <a href="#" id="toggle-btn" class="action-btn">НАЖАТЬ</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
